@@ -201,6 +201,9 @@
                     registration.showNotification("Reminder", {
                         body: "It's time!",
                         requireInteraction: true,
+                        data: {
+                            url: "your-destination-page.html" // Change this to your destination URL
+                        }
                     });
                     // Play notification sound
                     document.getElementById("notificationsound").play();
@@ -271,6 +274,9 @@
                         registration.showNotification("Reminder", {
                             body: "It's time!",
                             requireInteraction: true,
+                            data: {
+                                url: "your-destination-page.html" // Change this to your destination URL
+                            }
                         });
                         document.getElementById("notificationsound").play();
                         deleteReminderButton();
@@ -284,3 +290,4 @@
 </script>
 </body>
 </html>
+
